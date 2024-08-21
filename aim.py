@@ -120,16 +120,6 @@ while True:
                     current_mouse_y,
                     speed=aim_speed,
                 )
-            print(f"Current mouse position: {win32api.GetCursorPos()}")
-            print(f"Moving mouse to ({target_x}, {target_y})")
-            time.sleep(0.1)
-            cv.circle(
-                img_src,
-                (int(target_x), int(target_y)),
-                5,
-                (255, 0, 0),
-                thickness=-1,
-            )
 
         # 绘制矩形框
         for result in results:
